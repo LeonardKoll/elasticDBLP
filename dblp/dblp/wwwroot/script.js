@@ -10,15 +10,9 @@
             hits: [],
             searchterm:""
         },
-        computed: {
-            search: {
-                get() {
-                    return this.searchterm;
-                },
-                set(value) {
-                    this.searchterm = value;
-                    connection.invoke('Search', value);
-                }
+        methods: {
+            search : function () {
+                connection.invoke('Search', this.searchterm);
             }
         }
     });
@@ -32,6 +26,4 @@
     };
 
     connection.start();
-
-    // connection.invoke("SendMessage", user, message).catch(err => console.error(err.toString()));
 };
