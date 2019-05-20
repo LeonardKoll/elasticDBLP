@@ -34,7 +34,7 @@ headers = {"Content-Type": "application/json"}
 pubTypes = ("data", "article", "inproceedings", "proceedings", "book", "incollection", "phdthesis", "mastersthesis", "www")
 
 count = 0;
-iterator = lxml.etree.iterparse("dblp.xml", load_dtd=True, tag=pubTypes);
+iterator = lxml.etree.iterparse("dblp.xml", load_dtd=True, tag=pubTypes)
 iteratorLock = threading.Lock()
 
 camilla = threading.Thread(target=worker, args=(iterator, iteratorLock))
