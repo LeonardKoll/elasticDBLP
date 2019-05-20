@@ -17,7 +17,7 @@ def worker(iterator, lock):
         for child in element:
             pubData[child.tag] = child.text
         response = requests.post(url, data=json.dumps(pubData), headers=headers)
-        print(pubData)
+        #print(pubData)
         #print(response.text)
 
         # Memory Mgmt
