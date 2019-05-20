@@ -6,6 +6,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Web;
 using Microsoft.AspNetCore.SignalR;
+using Newtonsoft.Json.Linq;
 
 namespace dblp
 {
@@ -23,15 +24,27 @@ namespace dblp
         {
             DateTime queryReceived = DateTime.Now;
 
-            // Trigger Elasticsearch
-            // TODO
+            // Trigger Elastic
+            JObject response = ElasticSearch(term);
 
-            Clients.Caller.SendAsync("ReceiveResults", File.ReadAllText("sampleresult.txt"));
             // Deliver
             if (queryReceived > last_answered_query[Context.ConnectionId])
-            {
+            {   // If a later query has already been answered, we don't need to send this one.
+
                 last_answered_query[Context.ConnectionId] = queryReceived;
-                Clients.Caller.SendAsync("ReceiveResults", File.ReadAllText("sampleresult.txt"));
+
+                // Convert Results
+                JArray results = (JArray)response["hits"]["hits"];
+                if (results.HasValues)
+                {
+                    results = JArray.FromObject(results
+                        .Select(c => c["_source"])
+                        .ToList()
+                    );
+                }
+                
+                // Send
+                Clients.Caller.SendAsync("ReceiveResults", results.ToString());
             }
         }
 
@@ -40,6 +53,11 @@ namespace dblp
             DateTime temp;
             last_answered_query.TryRemove(Context.ConnectionId, out temp);
             await base.OnConnectedAsync();
+        }
+
+        private JObject ElasticSearch(String term)
+        {
+            return JObject.Parse(File.ReadAllText("sampleresult.txt"));
         }
     }
 }

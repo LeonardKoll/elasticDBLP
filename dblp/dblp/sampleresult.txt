@@ -1,34 +1,186 @@
-﻿[
-    {
-        "author": "Andrew J. Malton",
-        "title": "Erratum: Predicative Methodology.",
-        "pages": "285",
-        "year": "1988",
-        "volume": "26",
-        "journal": "Acta Inf.",
-        "number": "3",
-        "url": "db/journals/acta/acta26.html#HehnerGM88",
-        "ee": "https://doi.org/10.1007/BF00299637"
+﻿{
+    "took": 2280,
+    "timed_out": false,
+    "_shards": {
+        "total": 1,
+        "successful": 1,
+        "skipped": 0,
+        "failed": 0
     },
-    {
-        "author": "Rodney W. Topor",
-        "title": "The Correctness of the Schorr-Waite List Marking Algorithm.",
-        "pages": "211-221",
-        "year": "1979",
-        "volume": "11",
-        "journal": "Acta Inf.",
-        "url": "db/journals/acta/acta11.html#Topor79",
-        "ee": "https://doi.org/10.1007/BF00289067"
-    },
-    {
-        "author": "Juhani Karhumäki",
-        "title": "Synchronizable Deterministic Pushdown Automata and the Decidability of their Equivalence.",
-        "pages": "597-605",
-        "year": "1986",
-        "volume": "23",
-        "journal": "Acta Inf.",
-        "number": "5",
-        "url": "db/journals/acta/acta23.html#CulikK86",
-        "ee": "https://doi.org/10.1007/BF00288472"
+    "hits": {
+        "total": {
+            "value": 20,
+            "relation": "eq"
+        },
+        "max_score": 16.742254,
+        "hits": [
+            {
+                "_index": "dblp",
+                "_type": "_doc",
+                "_id": "_24IxGoBhJf6wFQSY77q",
+                "_score": 16.742254,
+                "_source": {
+                    "author": "M. Trauth",
+                    "title": "Das Rechenzentrum der Uni Trier. Paradigmenwechsel im Universitäts-Rechenzentrum Trier.",
+                    "year": "2000",
+                    "volume": "23",
+                    "journal": "Praxis der Informationsverarbeitung und Kommunikation",
+                    "number": "4",
+                    "pages": "241-242",
+                    "url": "db/journals/pik/pik23.html#Paul00a",
+                    "ee": "https://doi.org/10.1515/PIKO.2000.241"
+                }
+            },
+            {
+                "_index": "dblp",
+                "_type": "_doc",
+                "_id": "rW4IxGoBhJf6wFQS4cOp",
+                "_score": 13.887802,
+                "_source": {
+                    "author": "Walter Nink",
+                    "title": "Die multifunktionale Chipkarte der Universität Trier (TUNIKA).",
+                    "pages": "104-107",
+                    "year": "1999",
+                    "volume": "22",
+                    "journal": "Praxis der Informationsverarbeitung und Kommunikation",
+                    "number": "2",
+                    "ee": "https://doi.org/10.1515/piko.1999.22.2.104",
+                    "url": "db/journals/pik/pik22.html#Nink99"
+                }
+            },
+            {
+                "_index": "dblp",
+                "_type": "_doc",
+                "_id": "3G8fxGoBhJf6wFQSO5gh",
+                "_score": 13.887802,
+                "_source": {
+                    "author": "Christian Lieske",
+                    "title": "Notizen zur Herbstschule CL in Trier 1990.",
+                    "pages": "41-42",
+                    "year": "1991",
+                    "volume": "8",
+                    "journal": "LDV Forum",
+                    "number": "1/2",
+                    "ee": "http://www.jlcl.org/1991_Doppelheft/41-42_Lieske.pdf",
+                    "url": "db/journals/ldvf/ldvf8.html#Lieske91"
+                }
+            },
+            {
+                "_index": "dblp",
+                "_type": "_doc",
+                "_id": "k28fxGoBhJf6wFQSCph4",
+                "_score": 12.7126255,
+                "_source": {
+                    "author": "Ch. Schneider",
+                    "title": "Protokoll der Mitgliederversammlung der GLDV vom 26.9.91 in Trier.",
+                    "pages": "57-62",
+                    "year": "1991",
+                    "volume": "8",
+                    "journal": "LDV Forum",
+                    "number": "1/2",
+                    "ee": "http://www.jlcl.org/1991_Doppelheft/57-62_Schneider.pdf",
+                    "url": "db/journals/ldvf/ldvf8.html#Schneider91"
+                }
+            },
+            {
+                "_index": "dblp",
+                "_type": "_doc",
+                "_id": "Omuww2oBhJf6wFQSGntH",
+                "_score": 12.7126255,
+                "_source": {
+                    "author": "Thomas Engel 0001",
+                    "title": "Institut für Telematik (Trier) - angewandte Forschung nach Fraunhofer Ideal.",
+                    "pages": "97-101",
+                    "year": "1998",
+                    "volume": "13",
+                    "journal": "Inform., Forsch. Entwickl.",
+                    "number": "2",
+                    "url": "db/journals/ife/ife13.html#MeinelE98",
+                    "ee": "https://doi.org/10.1007/s004500050102"
+                }
+            },
+            {
+                "_index": "dblp",
+                "_type": "_doc",
+                "_id": "wG4KxGoBhJf6wFQSkNLf",
+                "_score": 12.196592,
+                "_source": {
+                    "author": "Nicole Thees",
+                    "title": "Statistikausbildung in Trier: Neue Studiengänge im Zuge des Bologna-Prozesses.",
+                    "pages": "105-114",
+                    "year": "2008",
+                    "volume": "2",
+                    "journal": "AStA Wirtschafts- und Sozialstatistisches Archiv",
+                    "number": "1-2",
+                    "ee": "https://doi.org/10.1007/s11943-008-0031-1",
+                    "url": "db/journals/astawsa/astawsa2.html#MunnichT08"
+                }
+            },
+            {
+                "_index": "dblp",
+                "_type": "_doc",
+                "_id": "u4JHxmoBhJf6wFQSZVTl",
+                "_score": 12.196592,
+                "_source": {
+                    "author": "Helge Klaus Rieder",
+                    "title": "Die Kulturgüterdatenbank der Region Trier - Ein multimedialer und mobiler Onlineführer.",
+                    "pages": "513-515",
+                    "year": "2011",
+                    "booktitle": "ISI",
+                    "crossref": "conf/isiwi/2011",
+                    "url": "db/conf/isiwi/isiwi2011.html#Rieder11"
+                }
+            },
+            {
+                "_index": "dblp",
+                "_type": "_doc",
+                "_id": "y3ONxGoBhJf6wFQS3wgu",
+                "_score": 11.280771,
+                "_source": {
+                    "author": "Ann-Christine Ehlis",
+                    "title": "Cortical hemodynamic changes during the Trier Social Stress Test: An fNIRS study.",
+                    "pages": "107-115",
+                    "year": "2018",
+                    "volume": "171",
+                    "journal": "NeuroImage",
+                    "ee": "https://www.wikidata.org/entity/Q47254548",
+                    "url": "db/journals/neuroimage/neuroimage171.html#RosenbaumHTHMNF18"
+                }
+            },
+            {
+                "_index": "dblp",
+                "_type": "_doc",
+                "_id": "uWYrw2oBhJf6wFQSxI99",
+                "_score": 10.87257,
+                "_source": {
+                    "author": "Björn Karlson",
+                    "title": "A Virtual Reality Version of the Trier Social Stress Test: A Pilot Study.",
+                    "pages": "325-336",
+                    "year": "2011",
+                    "volume": "20",
+                    "journal": "Presence",
+                    "number": "4",
+                    "ee": "https://doi.org/10.1162/PRES_a_00052",
+                    "url": "db/journals/presence/presence20.html#WallergardJOJK11"
+                }
+            },
+            {
+                "_index": "dblp",
+                "_type": "_doc",
+                "_id": "f28fxGoBhJf6wFQSXJlR",
+                "_score": 10.492878,
+                "_source": {
+                    "author": "W. Hellmann",
+                    "title": "Bericht über die Sitzung des Arbeitskreises Lexikographie in der GLDV am 27.9.91 Univesität Trier.",
+                    "pages": "44-45",
+                    "year": "1992",
+                    "volume": "9",
+                    "journal": "LDV Forum",
+                    "number": "1",
+                    "ee": "http://www.jlcl.org/1992_Heft1/44-45_Hellmann.pdf",
+                    "url": "db/journals/ldvf/ldvf9.html#Hellmann92"
+                }
+            }
+        ]
     }
-]
+}
