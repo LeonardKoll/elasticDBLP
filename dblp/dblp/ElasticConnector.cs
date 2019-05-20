@@ -6,13 +6,14 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Web;
 using Microsoft.AspNetCore.SignalR;
+using Flurl.Http;
 using Newtonsoft.Json.Linq;
 
 namespace dblp
 {
     public class ElasticConnector : Hub
     {
-        public static ConcurrentDictionary<String, DateTime> last_answered_query = new ConcurrentDictionary<string, DateTime>();
+        private static ConcurrentDictionary<String, DateTime> last_answered_query = new ConcurrentDictionary<string, DateTime>();
 
         public override async Task OnConnectedAsync()
         {
@@ -55,9 +56,18 @@ namespace dblp
             await base.OnConnectedAsync();
         }
 
-        private JObject ElasticSearch(String term)
+        private JObject ElasticSearch(string term)
         {
-            return JObject.Parse(File.ReadAllText("sampleresult.txt"));
+            var responseString = "http://localhost:9200/dblp/_search".PostJsonAsync( new{
+                query = new
+                {
+                    multi_match = new
+                    {
+                        query = term
+                    }
+                }
+            }).ReceiveString().Result;
+            return JObject.Parse(responseString);
         }
     }
 }
