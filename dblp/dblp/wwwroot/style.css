@@ -1,0 +1,53 @@
+﻿body {
+    padding-top: 5em;
+    font-family: Helvetica, Arial, Geneva, sans-serif;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    width: 35em;
+}
+
+img {
+    width: 30%;
+}
+
+input {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.results {
+    margin-top: 1em;
+}
+
+.entry {
+    padding: 0em;
+    margin-left: 0em;
+    margin-right: 0em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border-style: solid;
+    border-color: grey;
+    border-width: thin;
+}
+
+table {
+    width: 100%;
+    font-size: 0.7em;
+    padding: 0.3em;
+}
+
+.key {
+    width: 15%;
+    padding: 0.3em;
+    color: grey;
+}
+
+.value {
+    width: 85%;
+    padding: 0.3em;
+}

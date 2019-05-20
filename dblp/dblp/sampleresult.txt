@@ -1,0 +1,34 @@
+﻿[
+    {
+        "author": "Andrew J. Malton",
+        "title": "Erratum: Predicative Methodology.",
+        "pages": "285",
+        "year": "1988",
+        "volume": "26",
+        "journal": "Acta Inf.",
+        "number": "3",
+        "url": "db/journals/acta/acta26.html#HehnerGM88",
+        "ee": "https://doi.org/10.1007/BF00299637"
+    },
+    {
+        "author": "Rodney W. Topor",
+        "title": "The Correctness of the Schorr-Waite List Marking Algorithm.",
+        "pages": "211-221",
+        "year": "1979",
+        "volume": "11",
+        "journal": "Acta Inf.",
+        "url": "db/journals/acta/acta11.html#Topor79",
+        "ee": "https://doi.org/10.1007/BF00289067"
+    },
+    {
+        "author": "Juhani Karhumäki",
+        "title": "Synchronizable Deterministic Pushdown Automata and the Decidability of their Equivalence.",
+        "pages": "597-605",
+        "year": "1986",
+        "volume": "23",
+        "journal": "Acta Inf.",
+        "number": "5",
+        "url": "db/journals/acta/acta23.html#CulikK86",
+        "ee": "https://doi.org/10.1007/BF00288472"
+    }
+]
